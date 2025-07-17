@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Learning Web Development: HTML, CSS & JavaScript</title>
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header {
+      background: #e0ecff;
+      width: 100%;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    }
+    h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    main {
+      max-width: 700px;
+      width: 100%;
+      padding: 20px;
+    }
+    section {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      margin-bottom: 24px;
+      padding: 20px;
+    }
+    h2 {
+      color: #005fa3;
+      margin-top: 0;
+    }
+    p, li {
+      font-size: 1.1em;
+      line-height: 1.7;
+    }
+    img {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    }
+    a {
+      color: #0077cc;
+      text-decoration: none;
+      margin: 10px 0;
+      display: inline-block;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      margin: 10px 0 10px 20px;
+    }
+    .code {
+      background: #f4f4f4;
+      border-radius: 4px;
+      padding: 4px 8px;
+      font-family: 'Consolas', 'Monaco', monospace;
+      font-size: 1em;
+      color: #333;
+    }
+    @media (max-width: 600px) {
+      main {
+        padding: 5px;
+      }
+      section {
+        padding: 10px;
+      }
+      h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Learning Web Development: HTML, CSS & JavaScript</h1>
+    <p style="font-size:1.2em; color:#333;">A beginner-friendly guide to building your first interactive webpage</p>
+  </header>
+  <main>
+    <section>
+      <h2>What is HTML?</h2>
+      <p><strong>HTML</strong> (HyperText Markup Language) is the standard language for creating webpages. It provides the structure and content of your site using different elements.</p>
+      <ul>
+        <li><span class="code">&lt;h1&gt;</span> - Main heading of the page.</li>
+        <li><span class="code">&lt;p&gt;</span> - Paragraphs for text content.</li>
+        <li><span class="code">&lt;img&gt;</span> - Displays images. <span class="code">src</span> is the image link, <span class="code">alt</span> is alternative text for accessibility.</li>
+        <li><span class="code">&lt;a&gt;</span> - Creates links to other pages or sections.</li>
+      </ul>
+      <p>Example image below:</p>
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="A beautiful forest landscape from Unsplash">
+      <p>Try these links:</p>
+      <a href="https://www.example.com" target="_blank">Visit Example.com (external link)</a>
+      <a href="#css-section">Jump to CSS Section (internal link)</a>
+    </section>
+    <section id="css-section">
+      <h2>What is CSS?</h2>
+      <p><strong>CSS</strong> (Cascading Style Sheets) is used to style and layout your webpage. It controls colors, fonts, spacing, and even responsive design for different devices.</p>
+      <ul>
+        <li><span class="code">background-color</span> - Sets the background color of the page.</li>
+        <li><span class="code">font-family</span> - Changes the font style.</li>
+        <li><span class="code">margin</span> and <span class="code">padding</span> - Add space around and inside elements.</li>
+        <li><span class="code">@media</span> - Makes your site responsive for mobile devices.</li>
+      </ul>
+      <p>Notice how this page looks good on both desktop and mobile? That's thanks to CSS!</p>
+    </section>
+    <section>
+      <h2>What is JavaScript?</h2>
+      <p><strong>JavaScript</strong> is a programming language that lets you add interactivity to your webpage. You can respond to user actions, update content, and much more.</p>
+      <ul>
+        <li><span class="code">&lt;button&gt;</span> - Adds a clickable button.</li>
+        <li><span class="code">onclick</span> - An event that runs code when the button is clicked.</li>
+        <li><span class="code">alert()</span> - Shows a popup message.</li>
+      </ul>
+      <p>Try clicking the button below to see JavaScript in action:</p>
+      <button id="greetBtn">Click Me!</button>
+      <p style="font-size:0.95em; color:#555;">When you click the button, a message will appear. This is called <strong>event handling</strong>—JavaScript responds to your action!</p>
+    </section>
+    <section>
+      <h2>Summary</h2>
+      <ul>
+        <li><strong>HTML</strong> structures your content.</li>
+        <li><strong>CSS</strong> styles and lays out your page.</li>
+        <li><strong>JavaScript</strong> adds interactivity.</li>
+      </ul>
+      <p>Experiment by editing this file and reloading the page to see what changes!</p>
+    </section>
+  </main>
+  <script>
+    document.getElementById('greetBtn').onclick = function() {
+      alert('Hello, welcome to my webpage!');
+    };
+  </script>
+</body>
+</html> 
